@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="经心守护交互演示：科普阅读、同伴互助、经期记录与关怀包流程。使用虚构数据，不提供真实申请或诊疗服务。">
+  <title>经心守护 · 网页演示</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="demo-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 3c0 9-3 16-10 16a7 7 0 0 1-7-7C3 5 11 3 20 3Z"/><path d="m3 21 12-12"/></svg></span><span>经心守护<small>让关怀，触手可及</small></span></a>
+      <p class="demo-label">独立网页 · 交互演示</p>
+      <nav id="navigation" aria-label="主要导航"></nav>
+      <div class="sidebar-note"><p>不需要扫码或登录</p><p>演示数据仅保存在本机，<br>不连接微信云端。</p><a href="#about">关于这份演示 →</a></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><a class="mobile-brand" href="#home">经心守护</a><span>认识身体 · 获得支持</span><a href="#privacy">隐私与说明</a></header>
+      <div class="notice">体验版：所有帖子、申请及统计均为演示，不代表真实服务。请勿填写个人隐私。</div>
+      <main id="main" tabindex="-1"></main>
+      <footer class="footer">经心守护 · 网页演示版 <span>健康教育信息不替代诊疗</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="confirm-dialog"><form method="dialog"><h2>清除演示数据？</h2><p>将删除此浏览器中的演示收藏、帖子、申请、记录和参与登记，不影响微信小程序或云端数据。</p><div class="actions"><button value="cancel" class="secondary">取消</button><button value="confirm" class="danger">确认清除</button></div></form></dialog>
+</body>
+</html>
